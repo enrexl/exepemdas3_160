@@ -9,6 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		..\paradigmaoop2_160\Enkapsulasi\Enkapsulasi.cpp = ..\paradigmaoop2_160\Enkapsulasi\Enkapsulasi.cpp
 		..\exercisedua_160\exercisedua_160\exercisedua_160.cpp = ..\exercisedua_160\exercisedua_160\exercisedua_160.cpp
+		..\paradigmaoop2_160\noOverriding\noOverriding.cpp = ..\paradigmaoop2_160\noOverriding\noOverriding.cpp
 		..\paradigmaoop2_160\polymorphy\polymorphy.cpp = ..\paradigmaoop2_160\polymorphy\polymorphy.cpp
 		..\paradigmaoop2_160\solveMultiWaris\solveMultiWaris.cpp = ..\paradigmaoop2_160\solveMultiWaris\solveMultiWaris.cpp
 	EndProjectSection

@@ -7,9 +7,9 @@ public:
 	bidangDatar() { //constructor
 		x = 0;
 	}
-	virtual void input() {
+	virtual void input() {// fungsi yang menerima input dan mengirim input melalui fungsi setX untuk disimpan di x
 		
-	} // fungsi yang menerima input dan mengirim input melalui fungsi setX untuk disimpan di x
+	} 
 	
 		virtual float Luas(int a) { //fungsi untuk menghitung luas
 			return 0; 
@@ -34,23 +34,54 @@ private:
 	int jejari;
 public:
 	Lingkaran() {
-		cout << "Lingkaran dibua\n";
+		cout << "Lingkaran dibuat\n";
 	}
 	void input() {
 		cout << "Masukkan jejari = ";
 		cin >> jejari;
 		setX(jejari);
 	}
+	float Keliling(int a) {
+		a = 3.14 * a * a;
+		return 0;
+	}
+	float Luas(int a) {
+		a = 3.14 * 2 * a;
+	}
 	
 };
-class Bujursangkar :public bidangDatar { /*lengkapi disini*/ };
+class Bujursangkar :public bidangDatar { 
+private:
+	int sisi;
+public:
+	Bujursangkar() {
+		cout << "Bujursangkar dibuat\n";
+	}
+	void input() {
+		cout << "Masukkan Sisi = ";
+		cin >> sisi;;
+		setX(sisi);
+	}
+	float Keliling(int a) {
+		a = sisi * 4;
+		return 0;
+	}
+	float Luas(int a) {
+		a = sisi * sisi;
+		return 0;
+	}
+
+};
 
 int main() { 
-	int setnum;
-	cin >> setnum;
 	Lingkaran L;
-	L.setX(setnum)
-	
+	L.Keliling(6);
+	L.Luas(6);
+
+	Bujursangkar B;
+	B.setX(5);
+	B.Luas(5);
+	B.Keliling(5);
 
 	
 }
