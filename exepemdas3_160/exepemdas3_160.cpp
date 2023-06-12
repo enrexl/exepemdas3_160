@@ -1,10 +1,23 @@
 #include <iostream>
-
-int main()
-{
-    std::cout << "Hello World!\n";
-}
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
+using namespace std;
+class bidangDatar {
+private:
+	int x; //variabel untuk menyimpan input dari lingkaran maupun bujursangkar
+public:
+	bidangDatar() { //constructor
+		x = 0;
+	}
+	virtual void input() {} // fungsi yang menerima input dan mengirim input melalui
+	fungsi setX untuk disimpan di x
+		virtual float Luas(int a) { return 0; } //fungsi untuk menghitung luas
+	virtual float Keliling(int a) { return 0; } //fungsi untuk menghitung keliling
+	void setX(int a) { //fungsi untuk memberi/mengirim nilai pada x
+		this->x = a;
+	}
+	int getX() { //fungsi untuk membaca/mengambil nilai dalam x
+		return x;
+	}
+};
+class Lingkaran :public bidangDatar { /*lengkapi disini*/ };
+class Bujursangkar :public bidangDatar { /*lengkapi disini*/ };
+int main() { /*lengkapi disini*/ }
